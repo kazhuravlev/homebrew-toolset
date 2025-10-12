@@ -5,13 +5,13 @@
 class Toolset < Formula
   desc "Toolset helps to keep a project-specific tools"
   homepage "https://github.com/kazhuravlev/toolset"
-  version "0.36.1"
+  version "0.37.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kazhuravlev/toolset/releases/download/v0.36.1/toolset_Darwin_arm64.tar.gz"
-      sha256 "a8d6bf507cf2407038acb70840cda5c4577333363b9347115e84c9173310753d"
+      url "https://github.com/kazhuravlev/toolset/releases/download/v0.37.0/toolset_Darwin_arm64.tar.gz"
+      sha256 "34e1c0e5381bc8b2e28fac982867182cb8892bbc2122706253a94c9caab0c8d3"
 
       def install
         bin.install "toolset"
@@ -21,8 +21,8 @@ class Toolset < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kazhuravlev/toolset/releases/download/v0.36.1/toolset_Linux_arm64.tar.gz"
-      sha256 "59be82e2cae2b6eb2b5c097b4d983a244e004bba6ecb5bfac2f7ce5c5c4bbcfc"
+      url "https://github.com/kazhuravlev/toolset/releases/download/v0.37.0/toolset_Linux_arm64.tar.gz"
+      sha256 "d2d100095354e74445417784b3a09e870cb876c01b62a04192320fb105c27281"
       def install
         bin.install "toolset"
       end
